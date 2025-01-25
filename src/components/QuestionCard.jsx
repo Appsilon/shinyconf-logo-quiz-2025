@@ -6,8 +6,13 @@ import Option from './Option';
 export default function QuestionCard(props) {
   return (
     <div 
-        className='shadow p-3 mb-5 bg-white rounded' 
-        style={{width: "50%", marginLeft: "auto", marginRight: "auto", marginTop: "10%" }}
+        className='responsive-div shadow p-3 mb-5 bg-white rounded' 
+        style={{
+          width: "50%", 
+          marginLeft: "auto", 
+          marginRight: "auto", 
+          marginTop: "5%"
+        }}
     >
     <Row className='d-flex justify-content-center'>
       <Image 
@@ -46,7 +51,7 @@ export default function QuestionCard(props) {
       <Row style={{marginBottom: "40px"}} className='d-flex justify-content-center'> 
           <Button 
               type='button' 
-              variant="outline-primary next-btn"
+              variant="outline-primary next-btn responsive-btn"
               style={{
                 width: "120px", 
                 borderRadius: "50px", 
