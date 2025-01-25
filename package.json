@@ -1,6 +1,5 @@
 {
   "name": "logo_quiz",
-  "homepage": "https://appsilon.github.io/shinyconf-logo-quiz-2025",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,6 +10,7 @@
     "react": "^19.0.0",
     "react-bootstrap": "^2.10.7",
     "react-dom": "^19.0.0",
+    "react-gauge-component": "^1.2.62",
     "react-scripts": "5.0.1"
   },
   "scripts": {

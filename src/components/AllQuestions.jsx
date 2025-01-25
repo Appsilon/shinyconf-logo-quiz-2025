@@ -3,6 +3,7 @@ import questions from '../data/questions';
 import { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 import { Button, Container, Row } from 'react-bootstrap';
+import GaugeComponent from 'react-gauge-component';
 
 export default function AllQuestions() {
     const [currentPage, nextPage] = useState(0);
@@ -90,7 +91,39 @@ export default function AllQuestions() {
         </Modal.Footer>
       </Modal>
       <Modal size='md' show={showResult}>
-        <Modal.Body>You received {marks}/{questions.length}</Modal.Body>
+        <Modal.Header 
+            className='d-flex justify-content-center' 
+            style={{fontFamily: "Montserrat", fontSize: "32px", fontWeight: "500"}}>
+              Score &nbsp; <i className="bi bi-card-checklist"></i>
+        </Modal.Header>
+        <Modal.Body>
+        <GaugeComponent
+            value={(marks/questions.length)*100}
+            type="radial"
+            labels={{
+              tickLabels: {
+                type: "inner",
+                ticks: [
+                  { value: 20 },
+                  { value: 40 },
+                  { value: 60 },
+                  { value: 80 },
+                  { value: 100 }
+                ]
+              }
+            }}
+            arc={{
+              colorArray: ['#EA4228','#5BE12C'],
+              subArcs: [{limit: 10}, {limit: 30}, {}, {}, {}],
+              padding: 0.02,
+              width: 0.3,
+            }}
+            pointer={{
+              elastic: true,
+              animationDelay: 0
+            }}
+        />
+        </Modal.Body>
         <Modal.Footer>
         <Button 
               type='button' 
