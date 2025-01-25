@@ -7,7 +7,7 @@ export default function QuestionCard(props) {
   return (
     <div 
         className='shadow p-3 mb-5 bg-white rounded' 
-        style={{width: "50%", marginLeft: "auto", marginRight: "auto", marginTop: "200px" }}
+        style={{width: "50%", marginLeft: "auto", marginRight: "auto", marginTop: "10%" }}
     >
     <Row className='d-flex justify-content-center'>
       <Image 
@@ -56,8 +56,9 @@ export default function QuestionCard(props) {
               size='lg'
               onClick={props.handleNext}
               disabled={props.disabled}
+              hidden={props.nextButtonHidden}
           >
-            <i className="bi bi-fast-forward-fill"/> Next
+            <i className={props.nextIcon}/> {props.nextButtonText}
           </Button>
       </Row>
     </div>
