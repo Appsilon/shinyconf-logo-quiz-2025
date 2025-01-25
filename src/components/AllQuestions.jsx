@@ -2,7 +2,7 @@ import QuestionCard from './QuestionCard';
 import questions from '../data/questions';
 import { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
-import { Button } from 'react-bootstrap';
+import { Button, Container, Row } from 'react-bootstrap';
 
 export default function AllQuestions() {
     const [currentPage, nextPage] = useState(0);
@@ -40,6 +40,19 @@ export default function AllQuestions() {
 
     return (
         <>
+        <Container className='d-flex justify-content-center'>
+          <Row>
+            <text style={{
+              fontFamily: "Montserrat",
+              fontSize: "48px",
+              color: "#FF3658",
+              fontWeight: "700",
+              marginTop: "10px"
+            }}
+            className='shadow-sm p-3 bg-white rounded'>LOGO MASTER
+            </text>
+          </Row>
+        </Container>
       <QuestionCard 
         src={question.src}
         option_first={question.option_first}
