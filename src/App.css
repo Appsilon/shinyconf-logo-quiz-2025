@@ -1,0 +1,36 @@
+.option-btn {
+    &:hover {
+        background-color: #0099F9;
+        border-color: #0099F9;
+    }
+    &:active {
+        background-color: #0099F9 !important;
+        border-color: #0099F9;
+        color: white;
+    }
+    &:focus {
+        background-color: #0099F9 !important;
+        border-color: #0099F9;
+        color: white;
+    }
+    border-color: #0099F9;
+    color: #0099F9;
+}
+
+.next-btn {
+    &:hover {
+        background-color: #FF3658;
+        border-color: #FF3658;
+    }
+    &:active {
+        background-color: #FF3658 !important;
+        color: white;
+        border-color: #FF3658 !important;
+    }
+    &:focus {
+        background-color: #FF3658 !important;
+        color: white;
+    }
+    border-color: #FF3658;
+    color: #FF3658;
+}
