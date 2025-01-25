@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/shinyconf-logo-quiz-2025/static/css/main.c9f53ad7.css",
+    "main.js": "/shinyconf-logo-quiz-2025/static/js/main.d5546f3f.js",
+    "index.html": "/shinyconf-logo-quiz-2025/index.html",
+    "main.c9f53ad7.css.map": "/shinyconf-logo-quiz-2025/static/css/main.c9f53ad7.css.map",
+    "main.d5546f3f.js.map": "/shinyconf-logo-quiz-2025/static/js/main.d5546f3f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c9f53ad7.css",
+    "static/js/main.d5546f3f.js"
+  ]
+}
