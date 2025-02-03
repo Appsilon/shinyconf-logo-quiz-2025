@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/shinyconf-logo-quiz-2025/static/css/main.c9f53ad7.css",
-    "main.js": "/shinyconf-logo-quiz-2025/static/js/main.13e80b08.js",
+    "main.css": "/shinyconf-logo-quiz-2025/static/css/main.b1892cd0.css",
+    "main.js": "/shinyconf-logo-quiz-2025/static/js/main.973d39e5.js",
+    "static/media/background.png": "/shinyconf-logo-quiz-2025/static/media/background.7e46e2072079dee08a9f.png",
     "index.html": "/shinyconf-logo-quiz-2025/index.html",
-    "main.c9f53ad7.css.map": "/shinyconf-logo-quiz-2025/static/css/main.c9f53ad7.css.map",
-    "main.13e80b08.js.map": "/shinyconf-logo-quiz-2025/static/js/main.13e80b08.js.map"
+    "main.b1892cd0.css.map": "/shinyconf-logo-quiz-2025/static/css/main.b1892cd0.css.map",
+    "main.973d39e5.js.map": "/shinyconf-logo-quiz-2025/static/js/main.973d39e5.js.map"
   },
   "entrypoints": [
-    "static/css/main.c9f53ad7.css",
-    "static/js/main.13e80b08.js"
+    "static/css/main.b1892cd0.css",
+    "static/js/main.973d39e5.js"
   ]
 }
