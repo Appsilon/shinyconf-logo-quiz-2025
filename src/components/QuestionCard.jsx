@@ -28,7 +28,7 @@ export default function QuestionCard(props) {
       <Image 
         className='img'
         src={props.src} 
-        style={{width: "222px", marginBottom: "20px", marginTop: "40px"}}
+        style={{width: "222px", marginBottom: "32px", marginTop: "32px"}}
       />
     </Row>
       <Row>
