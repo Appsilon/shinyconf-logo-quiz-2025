@@ -1,211 +1,139 @@
 const questions = [
   {
-    "src": "rhino.png",
+    "src": "rhino.svg",
     "option_first": "rhino",
     "option_second": "golem",
-    "option_third": "shiny",
-    "option_fourth": "shiny.fluent",
+    "option_third": "shiny.fluent",
+    "option_fourth": "semantic.dashboard",
     "answer": "rhino"
   },
   {
-    "src": "golem.png",
-    "option_first": "shiny.semantic",
-    "option_second": "bs4Dash",
-    "option_third": "golem",
-    "option_fourth": "shinydashboard",
-    "answer": "golem"
+    "src": "box.linters.svg",
+    "option_first": "shiny.i18n",
+    "option_second": "checkmate",
+    "option_third": "box.linters",
+    "option_fourth": "lintr",
+    "answer": "box.linters"
   },
   {
-    "src": "ggplot2.png",
-    "option_first": "lattice",
-    "option_second": "plotly",
-    "option_third": "ggvis",
-    "option_fourth": "ggplot2",
-    "answer": "ggplot2"
+    "src": "reactable.extras.svg",
+    "option_first": "gt",
+    "option_second": "reactable",
+    "option_third": "reactable.extras",
+    "option_fourth": "DT",
+    "answer": "reactable.extras"
   },
   {
-    "src": "dplyr.png",
-    "option_first": "data.table",
-    "option_second": "dplyr",
-    "option_third": "tidyr",
-    "option_fourth": "plyr",
-    "answer": "dplyr"
+    "src": "semantic.dashboard.svg",
+    "option_first": "shiny.dashboard",
+    "option_second": "semantic.fluent",
+    "option_third": "shiny.semantic",
+    "option_fourth": "semantic.dashboard",
+    "answer": "semantic.dashboard"
   },
   {
-    "src": "rmarkdown.png",
-    "option_first": "knitr",
-    "option_second": "bookdown",
-    "option_third": "rmarkdown",
-    "option_fourth": "quarto",
-    "answer": "rmarkdown"
+    "src": "shiny.benchmark.svg",
+    "option_first": "data.validator",
+    "option_second": "shiny.telemetry",
+    "option_third": "shiny.benchmark",
+    "option_fourth": "box.lsp",
+    "answer": "shiny.benchmark"
   },
   {
-    "src": "tidyr.png",
-    "option_first": "reshape2",
-    "option_second": "tidyr",
+    "src": "shiny.blueprint.svg",
+    "option_first": "shiny.emptystate",
+    "option_second": "shiny.semantic",
+    "option_third": "shiny.blueprint",
+    "option_fourth": "shiny.fluent",
+    "answer": "shiny.blueprint"
+  },
+  {
+    "src": "shiny.fluent.svg",
+    "option_first": "semantic.dashboard",
+    "option_second": "shiny.fluent",
+    "option_third": "shinydashboard",
+    "option_fourth": "shiny.semantic",
+    "answer": "shiny.fluent"
+  },
+  {
+    "src": "shiny.gosling.svg",
+    "option_first": "semantic.assets",
+    "option_second": "shiny.tictoc",
+    "option_third": "shiny.gosling",
+    "option_fourth": "shiny.info",
+    "answer": "shiny.gosling"
+  },
+  {
+    "src": "shiny.i18n.svg",
+    "option_first": "shiny.locale",
+    "option_second": "shiny.i18n",
+    "option_third": "shiny.benchmark",
+    "option_fourth": "shiny.validator",
+    "answer": "shiny.i18n"
+  },
+  {
+    "src": "shiny.info.svg",
+    "option_first": "shiny.data",
+    "option_second": "shiny.meta",
+    "option_third": "shiny.info",
+    "option_fourth": "shiny.help",
+    "answer": "shiny.info"
+  },
+  {
+    "src": "shiny.react.svg",
+    "option_first": "shiny.vue",
+    "option_second": "shiny.js",
+    "option_third": "shiny.react",
+    "option_fourth": "shiny.angular",
+    "answer": "shiny.react"
+  },
+  {
+    "src": "shiny.router.svg",
+    "option_first": "shiny.route",
+    "option_second": "shiny.fluent",
+    "option_third": "shiny.router",
+    "option_fourth": "shiny.emptystate",
+    "answer": "shiny.router"
+  },
+  {
+    "src": "shiny.semantic.svg",
+    "option_first": "semantic.dashboard",
+    "option_second": "shiny.semantic",
+    "option_third": "shiny.fluent",
+    "option_fourth": "shiny.react",
+    "answer": "shiny.semantic"
+  },
+  {
+    "src": "shiny.telemetry.svg",
+    "option_first": "shiny.track",
+    "option_second": "shiny.metrics",
+    "option_third": "shiny.telemetry",
+    "option_fourth": "shiny.analytics",
+    "answer": "shiny.telemetry"
+  },
+  {
+    "src": "shiny.validator.svg",
+    "option_first": "shiny.validate",
+    "option_second": "data.validator",
+    "option_third": "shiny.validator",
+    "option_fourth": "pointblank",
+    "answer": "shiny.validator"
+  },
+  {
+    "src": "shiny.emptystate.svg",
+    "option_first": "shiny.validator",
+    "option_second": "data.validator",
+    "option_third": "shiny.emptystate",
+    "option_fourth": "LogAnalyzer",
+    "answer": "shiny.emptystate"
+  },
+  {
+    "src": "tapyr.svg",
+    "option_first": "tidyr",
+    "option_second": "tapyr",
     "option_third": "dplyr",
-    "option_fourth": "data.table",
-    "answer": "tidyr"
-  },
-  {
-    "src": "plotly.png",
-    "option_first": "ggplot2",
-    "option_second": "highcharter",
-    "option_third": "plotly",
-    "option_fourth": "rbokeh",
-    "answer": "plotly"
-  },
-  {
-    "src": "stringr.png",
-    "option_first": "stringi",
-    "option_second": "stringr",
-    "option_third": "rex",
-    "option_fourth": "rebus",
-    "answer": "stringr"
-  },
-  {
-    "src": "lubridate.png",
-    "option_first": "anytime",
-    "option_second": "dates",
-    "option_third": "lubridate",
-    "option_fourth": "timeDate",
-    "answer": "lubridate"
-  },
-  {
-    "src": "readr.png",
-    "option_first": "data.table",
-    "option_second": "readr",
-    "option_third": "vroom",
-    "option_fourth": "fread",
-    "answer": "readr"
-  },
-  {
-    "src": "purrr.png",
-    "option_first": "apply",
-    "option_second": "foreach",
-    "option_third": "purrr",
-    "option_fourth": "plyr",
-    "answer": "purrr"
-  },
-  {
-    "src": "forcats.png",
-    "option_first": "categorical",
-    "option_second": "factors",
-    "option_third": "forcats",
-    "option_fourth": "catdata",
-    "answer": "forcats"
-  },
-  {
-    "src": "broom.png",
-    "option_first": "modelr",
-    "option_second": "broom",
-    "option_third": "tidystats",
-    "option_fourth": "modeltidy",
-    "answer": "broom"
-  },
-  {
-    "src": "haven.png",
-    "option_first": "foreign",
-    "option_second": "rio",
-    "option_third": "haven",
-    "option_fourth": "readstat",
-    "answer": "haven"
-  },
-  {
-    "src": "rvest.png",
-    "option_first": "xml2",
-    "option_second": "httr",
-    "option_third": "rvest",
-    "option_fourth": "scrapeR",
-    "answer": "rvest"
-  },
-  {
-    "src": "readxl.png",
-    "option_first": "xlsx",
-    "option_second": "openxlsx",
-    "option_third": "readxl",
-    "option_fourth": "excel.link",
-    "answer": "readxl"
-  },
-  {
-    "src": "httr2.png",
-    "option_first": "curl",
-    "option_second": "RCurl",
-    "option_third": "httr2",
-    "option_fourth": "request",
-    "answer": "httr2"
-  },
-  {
-    "src": "dbplyr.png",
-    "option_first": "RSQLite",
-    "option_second": "dbplyr",
-    "option_third": "DBI",
-    "option_fourth": "sqldf",
-    "answer": "dbplyr"
-  },
-  {
-    "src": "testthat.png",
-    "option_first": "RUnit",
-    "option_second": "testit",
-    "option_third": "testthat",
-    "option_fourth": "tinytest",
-    "answer": "testthat"
-  },
-  {
-    "src": "magrittr.png",
-    "option_first": "pipeR",
-    "option_second": "magrittr",
-    "option_third": "pipe",
-    "option_fourth": "flows",
-    "answer": "magrittr"
-  },
-  {
-    "src": "glue.png",
-    "option_first": "stringr",
-    "option_second": "paste",
-    "option_third": "glue",
-    "option_fourth": "sprintf",
-    "answer": "glue"
-  },
-  {
-    "src": "tibble.png",
-    "option_first": "data.frame",
-    "option_second": "tibble",
-    "option_third": "dtable",
-    "option_fourth": "tbl",
-    "answer": "tibble"
-  },
-  {
-    "src": "gt.svg",
-    "option_first": "kable",
-    "option_second": "DT",
-    "option_third": "gt",
-    "option_fourth": "formattable",
-    "answer": "gt"
-  },
-  {
-    "src": "reprex.png",
-    "option_first": "minimal",
-    "option_second": "reprex",
-    "option_third": "example",
-    "option_fourth": "snippet",
-    "answer": "reprex"
-  },
-  {
-    "src": "reactlog.svg",
-    "option_first": "shinytest",
-    "option_second": "debugShiny",
-    "option_third": "reactlog",
-    "option_fourth": "shinyDebug",
-    "answer": "reactlog"
-  },
-  {
-    "src": "shinytest2.svg",
-    "option_first": "testShiny",
-    "option_second": "shinytest2",
-    "option_third": "shinytesting",
-    "option_fourth": "testthat",
-    "answer": "shinytest2"
+    "option_fourth": "purrr",
+    "answer": "tapyr"
   }
 ]
 

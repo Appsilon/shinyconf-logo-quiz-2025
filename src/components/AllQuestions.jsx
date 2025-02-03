@@ -2,7 +2,7 @@ import QuestionCard from './QuestionCard';
 import questions from '../data/questions';
 import { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
-import { Button, Container, Row } from 'react-bootstrap';
+import { Button, Container, Image, Row } from 'react-bootstrap';
 import GaugeComponent from 'react-gauge-component';
 
 export default function AllQuestions() {
@@ -43,15 +43,7 @@ export default function AllQuestions() {
         <>
         <Container className='d-flex justify-content-center'>
           <Row>
-            <text style={{
-              fontFamily: "Montserrat",
-              fontSize: "48px",
-              color: "#FF3658",
-              fontWeight: "700",
-              marginTop: "10px"
-            }}
-            className='shadow-sm p-3 bg-white rounded'>LOGO MASTER
-            </text>
+            <Image src="appsilon.svg" style={{width: 200, height: 60, marginTop: "58px"}}/>
           </Row>
         </Container>
       <QuestionCard 
@@ -64,7 +56,7 @@ export default function AllQuestions() {
         finishButtonHidden={currentPage + 1 === questions.length ? false : true}
         nextButtonHidden={false}
         nextButtonText={currentPage + 1 === questions.length ? "Done" : "Next"}
-        nextIcon={currentPage + 1 === questions.length ? "bi bi-check-circle-fill" : "bi bi-fast-forward-fill"}
+        nextIcon={currentPage + 1 === questions.length ? "bi bi-check-circle-fill" : "bi bi-arrow-right-square-fill"}
         handleOption={handleOption}
         handleNext={() => {
             if (currentPage + 1 === questions.length) {
@@ -135,6 +127,20 @@ export default function AllQuestions() {
           </Button>
         </Modal.Footer>
       </Modal>
+      <Row>
+        <a 
+          href='https://www.appsilon.com' 
+          target='_blank' 
+          className='d-flex justify-content-center'
+          style={{
+            fontFamily: "Titillium Web", 
+            fontSize: "24px", 
+            textDecoration: "none",
+            color: "#94AFCF"
+          }}
+        >www.appsilon.com
+        </a>
+      </Row>
       </>
     );
 }

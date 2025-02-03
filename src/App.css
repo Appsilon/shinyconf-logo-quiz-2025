@@ -1,38 +1,56 @@
+body {
+    background-image: url("background.png");
+    background-position: right;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: rgba(212, 238, 254, 0.3);
+}
+
+.img {
+    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.15));
+  }
+
 .option-btn {
+    &:hover {
+        background-color: #E4F5FF;
+        border-color: #0099FF;
+        color: black;
+    }
+    &:active {
+        background-color: #E4F5FF !important;
+        border-color: #0099FF;
+        color: black;
+    }
+    &:focus {
+        background-color: #E4F5FF !important;
+        border-color: #0099FF;
+        color: black;
+    }
+    border-color: #0099FF;
+    color: black;
+}
+
+#quiz-banner {
+    background-image: linear-gradient(to left, #D4EEFE, #F2FAFF) !important;
+}
+
+.next-btn, .finish-btn, .retake-btn {
     &:hover {
         background-color: #0099F9;
         border-color: #0099F9;
     }
     &:active {
         background-color: #0099F9 !important;
-        border-color: #0099F9;
         color: white;
+        border-color: #0099F9 !important;
     }
     &:focus {
         background-color: #0099F9 !important;
-        border-color: #0099F9;
         color: white;
     }
-    border-color: #0099F9;
-    color: #0099F9;
-}
-
-.next-btn, .finish-btn, .retake-btn {
-    &:hover {
-        background-color: #FF3658;
-        border-color: #FF3658;
-    }
-    &:active {
-        background-color: #FF3658 !important;
-        color: white;
-        border-color: #FF3658 !important;
-    }
-    &:focus {
-        background-color: #FF3658 !important;
-        color: white;
-    }
-    border-color: #FF3658;
-    color: #FF3658;
+    background-color: #0099F9 !important;
+    color: white !important;
+    border-color: #0099F9 !important;
 }
 
 text[transform^="rotate(0)"] {
