@@ -2,7 +2,7 @@ const questions = [
   {
     "src": "rhino.svg",
     "option_first": "rhino",
-    "option_second": "golem",
+    "option_second": "shiny.react",
     "option_third": "shiny.fluent",
     "option_fourth": "semantic.dashboard",
     "answer": "rhino"
@@ -112,12 +112,12 @@ const questions = [
     "answer": "shiny.telemetry"
   },
   {
-    "src": "shiny.validator.svg",
+    "src": "data.validator.svg",
     "option_first": "shiny.validate",
     "option_second": "data.validator",
     "option_third": "shiny.validator",
     "option_fourth": "pointblank",
-    "answer": "shiny.validator"
+    "answer": "data.validator"
   },
   {
     "src": "shiny.emptystate.svg",
