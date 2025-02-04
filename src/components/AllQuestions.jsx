@@ -44,6 +44,7 @@ export default function AllQuestions() {
         <Container className='d-flex justify-content-center'>
           <Row>
             <Image src="appsilon.svg" style={{width: 200, height: 60, marginTop: "58px"}}/>
+            <Image src="shinyconf2025.webp" style={{width: 300, height: 60, marginTop: "58px"}}/>
           </Row>
         </Container>
       <QuestionCard 
