@@ -10,7 +10,7 @@ body {
     filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, 0.15));
   }
 
-.option-btn {
+.option-btn, .retake-btn {
     &:hover {
         background-color: #E4F5FF;
         border-color: #0099FF;
@@ -34,7 +34,7 @@ body {
     background-image: linear-gradient(to left, #D4EEFE, #F2FAFF) !important;
 }
 
-.next-btn, .finish-btn, .retake-btn {
+.next-btn, .finish-btn, .pharmaverse-btn {
     &:hover {
         background-color: #0099F9;
         border-color: #0099F9;
@@ -57,20 +57,4 @@ text[transform^="rotate(0)"] {
     fill: #0099F9 !important;
     text-shadow: none !important;
     font-weight: 600;
-  }
-
-  @media screen and (max-width: 768px) {
-    .responsive-div {
-      width: 100% !important;
-    }
-  }
-
-  @media screen and (max-width: 768px) {
-    .responsive-btn {
-        &:disabled {
-            background-color: #FF3658 !important;
-            color: white;
-            border-color: #FF3658 !important;
-        }
-    }
   }

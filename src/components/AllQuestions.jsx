@@ -122,15 +122,24 @@ export default function AllQuestions() {
             }}
         />
         </Modal.Body>
-        <Modal.Footer>
+        <Modal.Footer className='d-flex justify-content-center'>
         <Button 
               type='button' 
               variant="outline-primary retake-btn"
               size='lg'
               onClick={resetQuiz}
-              style={{fontFamily: "Titillium Web", fontSize: "24px"}}>
-            <i className="bi bi-repeat"/> Retake Quiz!
+              style={{fontFamily: "Titillium Web", fontSize: "20px", width: "225px"}}>
+            Retake Quiz
           </Button>
+          <a href='https://www.appsilon.com/rhinoverse' target='_blank'>
+          <Button 
+              type='button' 
+              variant="outline-primary pharmaverse-btn"
+              size='lg'
+              style={{fontFamily: "Titillium Web", fontSize: "20px", width: "225px"}}>
+             Explore Pharmaverse
+          </Button>
+          </a>
         </Modal.Footer>
       </Modal>
       <Row>
